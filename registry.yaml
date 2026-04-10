@@ -17,6 +17,16 @@
 #
 
 rulesfiles:
+  - name: custom-rules
+    description: My team custom Falco rules
+    authors: Your Team
+    contact: https://example.com/security
+    maintainers:
+      - name: The Falco Authors
+        email: sec@example.com
+    path: rules/custom_rules.yaml
+    license: apache-2.0
+    url: https://github.com/wwwjay/rules/blob/main/rules/custom_rules.yaml
   - name: falco-rules
     description: Falco rules that are loaded by default
     authors: The Falco Authors
@@ -26,11 +36,7 @@ rulesfiles:
         email: cncf-falco-dev@lists.cncf.io
     path: rules/falco_rules.yaml
     license: apache-2.0
-    url: https://github.com/falcosecurity/rules/blob/main/rules/falco_rules.yaml
-    signature:
-      cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-identity-regexp: https://github.com/falcosecurity/rules/
+    url: https://github.com/wwwjay/rules/blob/main/rules/falco_rules.yaml
   - name: falco-incubating-rules
     description: Falco incubating rules
     authors: The Falco Authors
@@ -40,11 +46,7 @@ rulesfiles:
         email: cncf-falco-dev@lists.cncf.io
     path: rules/falco-incubating_rules.yaml
     license: apache-2.0
-    url: https://github.com/falcosecurity/rules/blob/main/rules/falco-incubating_rules.yaml
-    signature:
-      cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-identity-regexp: https://github.com/falcosecurity/rules/
+    url: https://github.com/wwwjay/rules/blob/main/rules/falco-incubating_rules.yaml
   - name: falco-sandbox-rules
     description: Falco sandbox rules
     authors: The Falco Authors
@@ -54,21 +56,18 @@ rulesfiles:
         email: cncf-falco-dev@lists.cncf.io
     path: rules/falco-sandbox_rules.yaml
     license: apache-2.0
-    url: https://github.com/falcosecurity/rules/blob/main/rules/falco-sandbox_rules.yaml
-    signature:
-      cosign:
-        certificate-oidc-issuer: https://token.actions.githubusercontent.com
-        certificate-identity-regexp: https://github.com/falcosecurity/rules/
+    url: https://github.com/wwwjay/rules/blob/main/rules/falco-sandbox_rules.yaml
   - name: falco-deprecated-rules
     description: Falco deprecated rules kept as examples but are no longer maintained
     authors: The Falco Authors
     contact: https://falco.org/community
+
     maintainers:
       - name: The Falco Authors
         email: cncf-falco-dev@lists.cncf.io
     path: rules/falco-deprecated_rules.yaml
     license: apache-2.0
-    url: https://github.com/falcosecurity/rules/blob/main/rules/falco-deprecated_rules.yaml
+    url: https://github.com/wwwjay/rules/blob/main/rules/falco-deprecated_rules.yaml
   - name: application-rules
     archived: true
     description: This rules files has been archived and is no longer maintained
@@ -78,5 +77,5 @@ rulesfiles:
       - name: The Falco Authors
         email: cncf-falco-dev@lists.cncf.io
     path: archive/application_rules.yaml
-    url: https://github.com/falcosecurity/rules/blob/main/archive/application_rules.yaml
+    url: https://github.com/wwwjay/rules/blob/main/archive/application_rules.yaml
     license: apache-2.0

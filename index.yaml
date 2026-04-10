@@ -1,0 +1,56 @@
+- name: falco-incubating-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: wwwjay/rules/falco-incubating-rules
+  description: Falco incubating rules
+  home: https://github.com/wwwjay/rules/blob/main/rules/falco-incubating_rules.yaml
+  keywords:
+    - falco-incubating-rules
+  license: apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/wwwjay/rules/blob/main/rules/falco-incubating_rules.yaml
+- name: falco-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: wwwjay/rules/falco-rules
+  description: Falco rules that are loaded by default
+  home: https://github.com/wwwjay/rules/blob/main/rules/falco_rules.yaml
+  keywords:
+    - falco-rules
+  license: apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/wwwjay/rules/blob/main/rules/falco_rules.yaml
+- name: falco-sandbox-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: wwwjay/rules/falco-sandbox-rules
+  description: Falco sandbox rules
+  home: https://github.com/wwwjay/rules/blob/main/rules/falco-sandbox_rules.yaml
+  keywords:
+    - falco-sandbox-rules
+  license: apache-2.0
+  maintainers:
+    - email: cncf-falco-dev@lists.cncf.io
+      name: The Falco Authors
+  sources:
+    - https://github.com/wwwjay/rules/blob/main/rules/falco-sandbox_rules.yaml
+- name: myteam-rules
+  type: rulesfile
+  registry: ghcr.io
+  repository: wwwjay/rules/myteam-rules
+  description: My team custom Falco rules
+  home: https://github.com/<org>/<repo>/blob/main/rules/myteam_rules.yaml
+  keywords:
+    - myteam-rules
+  license: apache-2.0
+  maintainers:
+    - email: sec@example.com
+      name: The Falco Authors
+  sources:
+    - https://github.com/<org>/<repo>/blob/main/rules/myteam_rules.yaml
